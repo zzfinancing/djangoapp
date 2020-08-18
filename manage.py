@@ -3,10 +3,10 @@ import os
 import sys
 
 if __name__ == '__main__':
-    if os.environ.get('DJANGO_ENV') == 'production':
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.production')
-    else:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.settings')    
+   # if os.environ.get('DJANGO_ENV') == 'production':
+   #     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.production')
+   # else:
+   #     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.settings')    
 
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.production')
     try:
