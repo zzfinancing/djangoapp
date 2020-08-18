@@ -16,4 +16,5 @@ if os.environ.get('DJANGO_ENV') == 'production':
 else:
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.settings')    
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azuresite.production')
 application = get_wsgi_application()

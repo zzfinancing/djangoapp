@@ -23,9 +23,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DATABASES = {                                                                    
     'default': {                                                                 
         'ENGINE': 'django.db.backends.postgresql',                               
-        'NAME': os.environ['DBNAME'],                                            
-        'HOST': os.environ['DBHOST'],                                            
-        'USER': os.environ['DBUSER'],                                            
-        'PASSWORD': os.environ['DBPASS']                                         
+        'NAME': os.environ['Cupertino_DBforPostgreSQL_SubResourceName'],                                            
+        'HOST': os.environ['Cupertino_DBforPostgreSQL_TargetServiceEndpoint'],                                            
+        'USER': os.environ['Cupertino_DBforPostgreSQL_Identity'],                                            
+        'PASSWORD': os.environ['Cupertino_DBforPostgreSQL_Key']                                         
     }                                                                            
 }
